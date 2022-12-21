@@ -1,0 +1,126 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "https://s2.glbimg.com/Zf332SbBiyH-Vo4Z3yJVPdHlB6I=/0x0:1000x667/1000x0/smart/filters:strip_icc()/g.glbimg.com/og/gs/gsat4/f/thumbs/materia/2017/01/19/Ververidis_Vasilis_Shutterstock_Festa_na_Praia.jpg"
+}
+
+
+###
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Outro serviço",
+    "description": "Outra descrição",
+    "price": 1000,
+    "image": "https://uploads.metropoles.com/wp-content/uploads/2022/01/12162043/Festa-21-600x400.jpg"
+}
+
+
+###
+GET http://localhost:3000/api/services
+
+
+###
+GET http://localhost:3000/api/services/63a0ce3d3f2e15f192200f66
+
+
+###
+DELETE http://localhost:3000/api/services/63a0ce3d3f2e15f192200f66
+
+
+###
+PUT http://localhost:3000/api/services/63a0c60968ef68c246e7399b
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1500,
+    "image": "https://s2.glbimg.com/Zf332SbBiyH-Vo4Z3yJVPdHlB6I=/0x0:1000x667/1000x0/smart/filters:strip_icc()/g.glbimg.com/og/gs/gsat4/f/thumbs/materia/2017/01/19/Ververidis_Vasilis_Shutterstock_Festa_na_Praia.jpg"
+}
+
+
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Confraternização",
+    "author": "Willian",
+    "description": "Confraternização",
+    "budget": 10000,
+    "image": "https://s2.glbimg.com/Zf332SbBiyH-Vo4Z3yJVPdHlB6I=/0x0:1000x667/1000x0/smart/filters:strip_icc()/g.glbimg.com/og/gs/gsat4/f/thumbs/materia/2017/01/19/Ververidis_Vasilis_Shutterstock_Festa_na_Praia.jpg",
+    "services": [
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "https://s2.glbimg.com/Zf332SbBiyH-Vo4Z3yJVPdHlB6I=/0x0:1000x667/1000x0/smart/filters:strip_icc()/g.glbimg.com/og/gs/gsat4/f/thumbs/materia/2017/01/19/Ververidis_Vasilis_Shutterstock_Festa_na_Praia.jpg"
+        },
+        {
+            "name": "Outro serviço",
+            "description": "Outra descrição",
+            "price": 1000,
+            "image": "https://uploads.metropoles.com/wp-content/uploads/2022/01/12162043/Festa-21-600x400.jpg"
+        }
+    ]
+}
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Aniversário",
+    "author": "Willian",
+    "description": "Aniversário",
+    "budget": 5000,
+    "image": "https://uploads.metropoles.com/wp-content/uploads/2022/01/12162043/Festa-21-600x400.jpg"    
+}
+
+
+###
+GET http://localhost:3000/api/parties
+
+
+###
+GET http://localhost:3000/api/parties/63a0ce3d3f2e15f192200f66
+
+
+###
+DELETE http://localhost:3000/api/parties/63a3553a394e74428de59d28
+
+
+###
+PUT http://localhost:3000/api/parties/63a355ad394e74428de59d35
+Content-Type: application/json
+
+{
+    "title": "Confraternização",
+    "author": "Willian",
+    "description": "Confraternização",
+    "budget": 2000,
+    "image": "https://s2.glbimg.com/Zf332SbBiyH-Vo4Z3yJVPdHlB6I=/0x0:1000x667/1000x0/smart/filters:strip_icc()/g.glbimg.com/og/gs/gsat4/f/thumbs/materia/2017/01/19/Ververidis_Vasilis_Shutterstock_Festa_na_Praia.jpg",
+    "services": [
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "https://s2.glbimg.com/Zf332SbBiyH-Vo4Z3yJVPdHlB6I=/0x0:1000x667/1000x0/smart/filters:strip_icc()/g.glbimg.com/og/gs/gsat4/f/thumbs/materia/2017/01/19/Ververidis_Vasilis_Shutterstock_Festa_na_Praia.jpg"
+        },
+        {
+            "name": "Outro serviço",
+            "description": "Outra descrição",
+            "price": 1000,
+            "image": "https://uploads.metropoles.com/wp-content/uploads/2022/01/12162043/Festa-21-600x400.jpg"
+        }
+    ]
+}
